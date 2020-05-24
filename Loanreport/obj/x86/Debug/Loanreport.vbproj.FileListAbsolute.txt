@@ -1,0 +1,13 @@
+G:\interview project\Loan Ledger\Loanreport\Loanreport\bin\Debug\Loanreport.exe.config
+G:\interview project\Loan Ledger\Loanreport\Loanreport\bin\Debug\Loanreport.exe
+G:\interview project\Loan Ledger\Loanreport\Loanreport\bin\Debug\Loanreport.pdb
+G:\interview project\Loan Ledger\Loanreport\Loanreport\bin\Debug\Loanreport.xml
+G:\interview project\Loan Ledger\Loanreport\Loanreport\obj\x86\Debug\Loanreport.Resources.resources
+G:\interview project\Loan Ledger\Loanreport\Loanreport\obj\x86\Debug\Loanreport.vbproj.GenerateResource.Cache
+G:\interview project\Loan Ledger\Loanreport\Loanreport\obj\x86\Debug\Loanreport.exe
+G:\interview project\Loan Ledger\Loanreport\Loanreport\obj\x86\Debug\Loanreport.xml
+G:\interview project\Loan Ledger\Loanreport\Loanreport\obj\x86\Debug\Loanreport.pdb
+G:\interview project\Loan Ledger\Loanreport\Loanreport\bin\Debug\Loanledger.accdb
+G:\interview project\Loan Ledger\Loanreport\Loanreport\obj\x86\Debug\Loanreport.vbprojResolveAssemblyReference.cache
+G:\interview project\Loan Ledger\Loanreport\Loanreport\obj\x86\Debug\Loanreport.Form2.resources
+G:\interview project\Loan Ledger\Loanreport\Loanreport\obj\x86\Debug\Loanreport.Form3.resources
