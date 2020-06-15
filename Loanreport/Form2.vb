@@ -6,7 +6,10 @@ Imports CrystalDecisions.Shared
 
 Public Class Form2
     Private conn As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=G:\interview project\Loan Ledger\Loanreport\Loanreport\bin\Debug\Loanledger.accdb")
+    Private conn1 As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=G:\interview project\Loan Ledger\Loanreport\Loanreport\bin\Debug\Loanledger1.accdb")
     Private Sub Form2_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
+        'TODO: This line of code loads data into the 'LoanledgerDataSet.Loan' table. You can move, or remove it, as needed.
+        Me.LoanTableAdapter.Fill(Me.LoanledgerDataSet.Loan)
         'TODO: This line of code loads data into the 'LoanledgerDataSet.Loan' table. You can move, or remove it, as needed.
         Me.LoanTableAdapter.Fill(Me.LoanledgerDataSet.Loan)
         'TODO: This line of code loads data into the 'LoanledgerDataSet.Loan' table. You can move, or remove it, as needed.
@@ -21,7 +24,7 @@ Public Class Form2
 
     Private Sub Button1_Click(sender As System.Object, e As System.EventArgs) Handles Button1.Click
         Dim search As String = "Select * from Loan where LoanNo='" & ComboBox1.Text & "'"
-        conn.Open()
+                conn.Open()
         Dim cmd As New OleDbCommand(search, conn)
         Dim adpt As New OleDbDataAdapter(cmd)
         Dim table As New DataTable
@@ -66,13 +69,21 @@ Public Class Form2
         adpt.Fill(ds.table2)
         adpt.Fill(ds.table3)
         adpt.Fill(ds.table4)
-        adpt.Fill(ds.table5)
-        adpt.Fill(ds.table6)
-        '  adpt.Fill(ds.table7)
+        'adpt.Fill(ds.table5)
+
+        'adpt.Fill(ds.table7)
         conn.Close()
+        Dim search1 As String = "Select * from Loan where LoanNo='" & ComboBox1.Text & "'"
+        conn1.Open()
+        Dim cmd1 As New OleDbCommand(search1, conn1)
+        Dim adpt1 As New OleDbDataAdapter(cmd1)
+        Dim table1 As New DataTable
+        adpt1.Fill(ds.table5)
+        'adpt1.Fill(ds.table6)
 
 
-
+        'dataview1.DataSource = table.DefaultView
+        'conn1.Close()
         Dim reportdocument As CrystalDecisions.CrystalReports.Engine.ReportDocument
         reportdocument = New CrystalReport1
         reportdocument.SetDataSource(ds)
